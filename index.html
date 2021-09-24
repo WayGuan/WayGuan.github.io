@@ -3,135 +3,162 @@
 <title>Weiwei Guan's Site</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="/assets/css/w3.css">
+<link rel="stylesheet" href="/assets/css/all.css">
 <style>
-  .w3-row-padding img {
-    margin-bottom: 12px
-  }
+	.w3-row-padding img {
+		margin-bottom: 12px
+	}
 
-  /* Set the width of the sidebar to 120px */
-  .w3-sidebar {
-    width: 120px;
-    background: #222;
-  }
+	/* Set the width of the sidebar to 120px */
+	.w3-sidebar {
+		width: 120px;
+		background: #222;
+	}
 
-  /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-  #main {
-    margin-left: 120px
-  }
+	/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+	#main {
+		margin-left: 120px
+	}
 </style>
 
 <body class="w3-black">
 
-  <!-- Icon Bar (Sidebar) -->
-  <nav class="w3-sidebar w3-bar-block w3-small w3-center">
-    <!-- Avatar image in top left corner -->
-    <img src="images/wei.jpg" class="w3-padding-small" style="width:80%">
-    <p>Here Wei Go</p>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-home w3-xxlarge"></i>
-      <p>HOME</p>
-    </a>
-    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-user w3-xxlarge"></i>
-      <p>ABOUT</p>
-    </a>
-    <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fab fa-app-store w3-xxlarge"></i>
-      <p>WORKS</p>
-    </a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-envelope w3-xxlarge"></i>
-      <p>CONTACT</p>
-    </a>
-  </nav>
+	<!-- Icon Bar (Sidebar) -->
+	<nav class="w3-sidebar w3-bar-block w3-small w3-center">
+		<!-- Avatar image in top left corner -->
+		<img src="assets/images/wei.jpg" class="w3-padding-small" style="width:80%">
+		<p>Here Wei Go</p>
+		<a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black" onclick="myFunc(this)">
+			<i class="fa fa-home w3-xxlarge"></i>
+			<p>HOME</p>
+		</a>
+		<a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black" onclick="myFunc(this)">
+			<i class="fa fa-user w3-xxlarge"></i>
+			<p>ABOUT</p>
+		</a>
+		<a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black" onclick="myFunc(this)">
+			<i class="fab fa-app-store w3-xxlarge"></i>
+			<p>WORKS</p>
+		</a>
+		<a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black" onclick="myFunc(this)">
+			<i class="fa fa-envelope w3-xxlarge"></i>
+			<p>CONTACT</p>
+		</a>
+	</nav>
 
 
-  <!-- Page Content -->
-  <div class="w3-padding-large" id="main">
-    <!-- Header/Home -->
-    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-      <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Weiwei Guan.</h1>
-      <p>A Passionate Software Developer.</p>
-      <img src="images/wei.jpg" alt="boy" class="w3-image" width="60%">
-      <p>Collaborative, Curious, Creative, Adaptable </p>
-    </header>
+	<!-- Page Content -->
+	<div class="w3-padding-large" id="main">
+		<!-- Header/Home -->
+		<header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+			<h1 class="w3-xxxlarge"><span class="w3-hide-small">I'm</span> Weiwei Guan.</h1>
+			<p>A Passionate Software Developer.</p>
+			<div style="max-width:60%; margin:auto">
+				<img src="assets/images/onTheGrass.jpg" alt="boy" class="w3-image" style="max-height:400px">
+			</div>
+			<p>Collaborative, Curious, Creative, Adaptable </p>
+		</header>
 
-    <!-- About Section -->
-    <div class="w3-content w3-justify w3-padding-64" id="about">
-      <h2 class="w3-text-light-grey">About Me</h2>
-      <hr style="width:200px" class="w3-opacity">
-      <p>I am excited about learning new technologies and passionate about helping others with what I have mastered. I
-        enjoy the sense of achievement that I can pass the software programming knowledge to the younger generation by
-        volunteering in a code club.
-      </p>
-      <ul class="fa-ul">
-        <li><strong class="w3-padding-large">Langages :</strong> Java, JavaScript, Python, C#, .NET, PHP</li>
-        <li><strong class="w3-padding-large">Web Technologies :</strong> JQuery, VueJS, Ajax, MVC, HTML, CSS, SQL,
-          mySQL, Git</li>
-      </ul>
+		<!-- About Section -->
+		<div class="w3-content w3-justify w3-padding-64" id="about">
+			<h2 class="w3-text-light-grey">About Me</h2>
+			<hr style="width:200px" class="w3-opacity">
+			<p>I am excited about learning new technologies and passionate about helping others with what I have
+				mastered. I enjoy the sense of achievement that I can pass the software programming knowledge to the
+				younger generation by volunteering in a code club.
+			</p>
+			<ul class="fa-ul">
+				<li><strong class="w3-padding-large">Langages :</strong> Java, JavaScript, Python, C#, .NET, PHP</li>
+				<li><strong class="w3-padding-large">Web Technologies :</strong> JQuery, VueJS, Ajax, MVC, HTML, CSS,
+					SQL, mySQL, Git</li>
+			</ul>
+		</div>
+		<!-- Portfolio Section -->
+		<div class="w3-padding-64 w3-content" id="photos">
+			<h2 class="w3-text-light-grey">My Works</h2>
+			<hr style="width:200px" class="w3-opacity">
 
-      <!-- Portfolio Section -->
-      <div class="w3-padding-64 w3-content" id="photos">
-        <h2 class="w3-text-light-grey">My Works</h2>
-        <hr style="width:200px" class="w3-opacity">
+			<!-- Grid for photos -->
+			<div class="w3-row-padding">
+				<div class="w3-half">
+					<div class="w3-padding">
+						<a href="https://way-memory-card-game.netlify.app/">
+							<img src="assets/images/memoryGame.png" style="width:100%" class="w3-padding">
+						</a>
+						<p class="w3-padding-small">A simple memory matching game for my little boy.</p>
+						<p class="w3-padding-small">Environment: HTML, CSS, JavaScript, jQuery</p>
+					</div>
+					<div class="w3-padding">
+						<img src="assets/images/cch.png" style="width:100%" class="w3-padding">
+						<p class="w3-padding-small">A webapp for local health community center reagading fraud
+							prevention for seniors.</p>
+						<p class="w3-padding-small">Environment: HTML, CSS, JavaScript, Vue.js</p>
+					</div>
+				</div>
 
-        <!-- Grid for photos -->
-        <div class="w3-row-padding" style="margin:0 -16px">
-          <div class="w3-half">
-            <div class="w3-padding-16">
-              <a href="https://way-memory-card-game.netlify.app/">
-                <img src="images/memoryGame.png" style="width:90%">
-              </a>
-              <p>A simple memory matching game for my little boy</p>
-              <p>Environment: HTML, CSS, JavaScript, jQuery</p>
-            </div>
-            <div class="w3-padding-16">
-                <img src="images/cch.png" style="width:90%">
-              <p>A webapp for local health community center reagading fraud prevention for seniors.</p>
-              <p>Environment: HTML, CSS, JavaScript, Vue.js</p>
-            </div>
-          </div>
+				<div class="w3-half">
+					<div class="w3-padding">
+						<a href="https://way-memory-card-game.netlify.app/">
+							<img src="assets/images/covid.png" style="width:100%" class="w3-padding">
+						</a>
+						<p class="w3-padding-small">An app to get the latest data from Canada's COVID-19 outbreak
+							from <a href="https://opencovid.ca">opencovid</a>'s API. </p>
+						<p class="w3-padding-small">Environment: HTML, CSS, JavaScript, jQuery, Chart.js</p>
+					</div>
+					<div class="w3-padding-16">
+						<video src="assets/images/doctorWho.mp4" width="100%" class="w3-padding" autoplay loop></video>
+						<p class="w3-padding-small">This app is to connect to a database regarding Doctor Who (a
+							long-running BBC television
+							show), and use SQL or LINQ to query for the information of the doctors and companions.
+						</p>
+						<p class="w3-padding-small">Environment: C#, .NET</p>
+					</div>
 
-          <div class="w3-half">
-            <div class="w3-padding-16">
-              <a href="https://way-memory-card-game.netlify.app/">
-                <img src="images/covid.png" style="width:90%">
-              </a>
-              <p>An app to get the latest data from Canada's COVID-19 outbreak from <a href="https://opencovid.ca">opencovid</a>'s API. </p>
-              <p>Environment: HTML, CSS, JavaScript, jQuery,  Chart.js</p>
-            </div>
-          </div>
-          <!-- End photo grid -->
-        </div>
-        <!-- End Portfolio Section -->
-      </div>
+				</div>
+				<!-- End photo grid -->
+			</div>
+			<!-- End Portfolio Section -->
+		</div>
 
-      <!-- Contact Section -->
-      <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-        <h2 class="w3-text-light-grey">Contact Me</h2>
-        <hr style="width:200px" class="w3-opacity">
+		<!-- Contact Section -->
+		<div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+			<h2 class="w3-text-light-grey">Contact Me</h2>
+			<hr style="width:200px" class="w3-opacity">
 
-        <div class="w3-section">
-          <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Hamilton, ON</p>
-          <p><a href="mailto:weiwei.guan@hotmail.com"><i
-                class="fa fa-envelope w3-hover-opacity fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>Email:
-              weiwei.guan@hotmail.com</a></p>
+			<div class="w3-section">
+				<p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Hamilton, ON</p>
+				<p><a href="mailto:weiwei.guan@hotmail.com">
+						<i class="fa fa-envelope w3-hover-opacity fa-fw w3-text-white w3-xxlarge w3-margin-right">
+						</i>Email: weiwei.guan@hotmail.com</a>
+				</p>
 
-          <p><a href="https://www.linkedin.com/in/weiwei-guan"><i
-                class="fab fa-linkedin w3-hover-opacity fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>LinkedIn:
-              weiwei-guan</a>
-          </p>
-        </div>
-      </div>
+				<p><a href="https://www.linkedin.com/in/weiwei-guan">
+						<i
+							class="fab fa-linkedin w3-hover-opacity fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>LinkedIn:
+						weiwei-guan</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p class="w3-medium">&copy 2021 Weiwei</a></p>
+	</footer>
+	<!-- END PAGE CONTENT -->
+	</div>
 
-      <footer>
-        <p class="w3-medium">&copy 2021 Weiwei</a></p>
-      </footer>
-      <!-- END PAGE CONTENT -->
-    </div>
-
+	<script>
+		function myFunc(e){
+			let currentNode = document.getElementsByClassName('w3-bar-item');
+			console.log(currentNode);
+			console.log(e);
+			let nodeArray = Array.from(currentNode);
+			nodeArray.forEach(element => {
+				element.classList.remove('w3-black');
+			});
+			e.classList.add('w3-black');
+		}
+	</script>
 </body>
 
 </html>
